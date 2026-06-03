@@ -1,104 +1,206 @@
-<!DOCTYPE html>
-<html lang="bn">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manjib Fashion</title>
-<style>
-body{
+<title>Manjib Fashion</title><style>
+*{
 margin:0;
-font-family:Arial,sans-serif;
-background:#000;
-color:#fff;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
+
+body{
+background:#000;
+color:white;
+}
+
 header{
 background:#111;
 padding:20px;
 text-align:center;
 border-bottom:2px solid gold;
+position:sticky;
+top:0;
 }
-header h1{
+
+.logo{
+font-size:32px;
+font-weight:bold;
 color:gold;
-margin:0;
 }
+
 .hero{
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:50px 20px;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200') center/cover;
 }
-.hero h2{
+
+.hero h1{
+font-size:50px;
 color:gold;
+margin-bottom:15px;
 }
+
+.hero p{
+font-size:20px;
+max-width:700px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:gold;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:30px;
+}
+
+.section-title{
+text-align:center;
+color:gold;
+margin:50px 0 20px;
+font-size:35px;
+}
+
 .products{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:20px;
+gap:25px;
 padding:20px;
 }
+
 .card{
+width:300px;
 background:#111;
 border:1px solid gold;
-border-radius:10px;
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card-content{
 padding:20px;
-width:250px;
 text-align:center;
 }
+
 .card h3{
 color:gold;
+margin-bottom:10px;
 }
-.btn{
-display:inline-block;
-background:gold;
-color:black;
-padding:10px 20px;
-text-decoration:none;
-border-radius:5px;
+
+.price{
+font-size:22px;
 font-weight:bold;
+margin:10px 0;
 }
+
+.about{
+padding:50px 20px;
+text-align:center;
+max-width:900px;
+margin:auto;
+}
+
+.review-box{
+max-width:800px;
+margin:auto;
+padding:20px;
+text-align:center;
+}
+
+.review{
+background:#111;
+border:1px solid gold;
+padding:20px;
+margin:15px;
+border-radius:10px;
+}
+
+.contact{
+text-align:center;
+padding:50px 20px;
+}
+
 footer{
+background:#111;
 text-align:center;
 padding:20px;
-margin-top:30px;
+margin-top:40px;
 border-top:1px solid gold;
 }
-</style>
-</head>
-<body>
 
-<header>
-<h1>Manjib Fashion</h1>
-<p>Premium Three Piece, Hijab & T-Shirt Collection</p>
-</header>
-
-<section class="hero">
-<h2>Welcome to Manjib Fashion</h2>
-<p>স্টাইলিশ ও মানসম্মত ফ্যাশন পণ্যের বিশ্বস্ত অনলাইন শপ</p>
-<a class="btn" href="https://wa.me/8801867019260">Order on WhatsApp</a>
-</section>
-
-<section class="products">
-<div class="card">
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+</style></head><body><header>
+<div class="logo">MANJIB FASHION</div>
+</header><section class="hero">
+<h1>New Fashion Collection 2026</h1>
+<p>Premium Three Piece, Trendy T-Shirts & Elegant Hijabs</p>
+<a href="https://wa.me/8801867019260" class="btn">Order Now</a>
+</section><h2 class="section-title">Featured Products</h2><section class="products"><div class="card">
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=800">
+<div class="card-content">
 <h3>Premium Three Piece</h3>
-<p>৳ 1650</p>
+<div class="price">৳1650</div>
 </div>
-
-<div class="card">
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=800">
+<div class="card-content">
 <h3>Jersey Hijab</h3>
-<p>৳ 350</p>
+<div class="price">৳350</div>
 </div>
-
-<div class="card">
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800">
+<div class="card-content">
 <h3>Oversized T-Shirt</h3>
-<p>৳ 650</p>
+<div class="price">৳650</div>
 </div>
-</section>
-
-<footer>
-<p>WhatsApp: 01867019260</p>
+</div></section><section class="about">
+<h2 class="section-title">About Us</h2>
 <p>
-<a class="btn" href="https://www.facebook.com/share/1P3C8pbABX/">Facebook Page</a>
+Manjib Fashion is a trusted online fashion store in Bangladesh.
+We provide stylish Three Pieces, Premium Hijabs and Trendy T-Shirts at affordable prices.
 </p>
-</footer>
+</section><section class="review-box">
+<h2 class="section-title">Customer Reviews</h2><div class="review">
+★★★★★ Excellent Quality & Fast Delivery
+</div><div class="review">
+★★★★★ সুন্দর প্রোডাক্ট এবং খুব ভালো সার্ভিস।
+</div></section><section class="contact">
+<h2 class="section-title">Contact Us</h2><p>WhatsApp: 01867019260</p><br><a class="btn" href="https://www.facebook.com/share/1P3C8pbABX/">Facebook Page</a>
 
-</body>
+</section><footer>
+© 2026 Manjib Fashion | All Rights Reserved
+</footer><a class="whatsapp" href="https://wa.me/8801867019260">
+WhatsApp
+</a></body>
 </html>
